@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0d6efd" />
+    <link rel="shortcut icon" href="https://user-images.githubusercontent.com/52884009/203071589-e1ecb692-d065-4341-a78d-b37d35fbd215.jpg" type="image/webp">
+    <link rel="icon" href="https://user-images.githubusercontent.com/52884009/203071589-e1ecb692-d065-4341-a78d-b37d35fbd215.jpg" type="image/webp">
+    <meta name="description" content="All profiles links of Raksamala Farm available here."/>
+    <meta property="og:title" content="Raksamala Farm All Links"/>
+    <meta name="facebook-domain-verification" content="yc7sru4lps1qhzo48wdxytm6u570nx" />
+    <!--<link rel="icon" href="assets/image/rdhn.ico" />
+    <link rel="shortcut icon" href="assets/image/rdhn.ico" />
+    <link rel="apple-touch-icon" href="assets/image/rdhn.ico" />-->
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+
+    <!-- bootstrap-icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+
+    <title>Roy Farm</title>
+  </head>
+
+  <body id="home" data-spy="scroll" data-target=".navbar" data-bs-offset="0">
+    <!-- Up Button -->
+    <a href="#" class="btn btn-dark btn-up rounded-circle text-center shadow" id="btnup" onclick="onTop()"><i class="bi bi-chevron-up"></i></a>
+    <!-- end upbutton -->
+
+    <!-- Fullscreen Button -->
+    <button class="btn btn-dark btn-full text-center rounded-circle shadow" id="btnofull" onclick="openFullscreen()"><i class="bi bi-fullscreen"></i></button>
+    <button class="btn btn-dark btn-full text-center rounded-circle shadow" id="btncfull" onclick="closeFullscreen()"><i class="bi bi-fullscreen-exit"></i></button>
+    <!-- end Fullscreen button -->
+
+    <!-- Leanguage -->
+    <div class="dropdown btn-leanguage" id="dropdownBtn">
+      <button type="button" class="btn btn-dark p-1 dropdown-toggle rounded-circle" id="dropdownMenuOffset" data-bs-toggle="dropdown" data-bs-offset="0,20">
+        <img src="assets/image/eng.png" width="32px" id="imgLng" />
+      </button>
+      <div class="dropdown-menu dropdown-menu-dark shadow-lg rounded" aria-labelledby="dropdownMenuOffset">
+        <a class="dropdown-item" href="#" id="btnEng"><img src="assets/image/eng.png" width="32px" /> English</a>
+        <li>
+          <hr class="dropdown-divider" />
+        </li>
+        <a class="dropdown-item" href="#" id="btnId"><img src="assets/image/indonesia.png" width="32px" /> Indonesia</a>
+      </div>
+    </div>
+    <!-- End leanguage -->
+
+    <!-- navbar -->
+    <nav class="navbar-container" id="navbar">
+      <div class="navbar-logo">
+        <h3><a href="">Roy Farm</a></h3>
+      </div>
+      <div class="navbar-box">
+        <ul class="navbar-list">
+          <li onclick="navHide('home')" id="menuHome"><a href="#home" id="homeMenuText"></a></li>
+          <li onclick="navHide('about')" id="menuAbout"><a href="#about" id="aboutMenuText"></a></li>
+          <li onclick="navHide('skill')" id="menuSkill"><a href="#skills" id="skillMenuText"></a></li>
+          <li onclick="navHide('projek')" id="menuProjek"><a href="#projects" id="projectMenuText"></a></li>
+          <li onclick="navHide('contact')" id="menuContact"><a href="#contact" id="contactMenuText"></a></li>
+        </ul>
+      </div>
+      <div class="navbar-toggle">
+        <span></span>
+      </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <!-- Jumbotron -->
+    <section class="jumbotron text-center text-white">
+      <img src="assets/image/logo.png" class="rounded-circle shadow-lg" alt="Radhian Sobarna" width="200" />
+      <h1 class="display-4 mt-2 fw-bolder">RoyFarm</h1>
+      <div data-aos="zoom-in" data-aos-duration="300" data-aos-delay="2600">
+        <div class="justify-content-center">
+          <a href="#" target="_blank" class="btn btn-outline-light mt-3 me-2" id=""></a>
+        </div>
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34">
+        <path fill="#fff" fill-opacity="1" d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
+      </svg>
+    </section>
+    <!-- Akhir Jumbotron -->
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="row text-center mb-4">
+          <div class="col">
+            <h2 id="headingAbout"></h2>
+          </div>
+        </div>
+        <div class="row justify-content-center fs-5 text-center">
+          <div class="col-md-4 mb-4">
+            <p data-aos="fade-right" data-aos-duration="500" id="about1"></p>
+          </div>
+          <div class="col-md-4">
+            <p data-aos="fade-left" data-aos-duration="500" id="about2"></p>
+          </div>
+        </div>
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 240">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,96L60,80C120,64,240,32,360,58.7C480,85,600,171,720,213.3C840,256,960,256,1080,218.7C1200,181,1320,107,1380,69.3L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir About -->
+    <section class="ban_sec">
+      <div class="container">
+        <div class="ban_img">
+    <img src="assets/skills/koi.webp" width="100%" data-aos="zoom-in" data-aos-duration="300" data-aos-delay="100" alt="toko raksamala farm" border="0">
+          <div class="ban_text">
+            <strong>
+              <span>Katalog Produk</span><br>RoyFarm
+            </strong>
+            <p>Daftar Harga Ikan Terbaik Langsung dari Petani<br>
+              Dapatkan Harga Murah Sekarang Juga </p>
+            <a href="">Lihat Toko</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills -->
+
+    <section id="skills">
+      <div class="container">
+        <div class="row text-center mb-4">
+          <div class="col mb-3">
+            <h2 id="headingSkill"></h2>
+          </div>
+        </div>
+        <div class="row text-center mb-5">
+          <div class="col-md-2 col-6 mb-4">
+            <img src="assets/skills/ikancupang.jpg" alt="html" width="100%" data-aos="zoom-in" data-aos-duration="300" data-aos-delay="0" />
+          </div>
+          <div class="col-md-2 col-6 mb-4">
+            <img src="assets/skills/molly.jpg" alt="css" width="100%" data-aos="zoom-in" data-aos-duration="300" data-aos-delay="50" />
+          </div>
+          <div class="col-md-2 col-6 mb-4">
+            <img src="assets/skills/koi.webp" alt="js" width="100%" data-aos="zoom-in" data-aos-duration="300" data-aos-delay="100" />
+          </div>
+          <div class="col-md-2 col-6 mb-4">
+            <img src="assets/skills/guppy.jpg" alt="html" width="100%" data-aos="zoom-in" data-aos-duration="300" data-aos-delay="150" />
+          </div>
+          <div class="col-md-2 col-6 mb-4">
+            <img src="assets/skills/platy.jpg" alt="php" width="100%" data-aos="zoom-in" data-aos-duration="300" data-aos-delay="200" />
+          </div>
+          <div class="col-md-2 col-6 mb-4">
+            <img src="assets/skills/ikanpedang.jpg" alt="mysql" width="100%" data-aos="zoom-in" data-aos-duration="300" data-aos-delay="250" />
+          </div>
+         <!-- <div class="col-md-2 col-6 mb-4">
+            <img src="assets/skills/bootstrap.png" alt="bs" width="100%" data-aos="zoom-in" data-aos-duration="300" data-aos-delay="300" />
+          </div>
+          <div class="col-md-2 col-6 mb-4">
+            <img src="assets/skills/codeigniter.png" alt="ci" width="100%" data-aos="zoom-in" data-aos-duration="300" data-aos-delay="350" />
+          </div>
+          <div class="col-md-2 col-6 mb-4">
+            <img src="assets/skills/reactjs.png" alt="ci" width="100%" data-aos="zoom-in" data-aos-duration="300" data-aos-delay="400" />
+          </div>-->
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34">
+        <path fill="#0d6efd" fill-opacity="1" d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
+      </svg>
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#0d6efd"
+          fill-opacity="1"
+          d="M0,96L60,80C120,64,240,32,360,58.7C480,85,600,171,720,213.3C840,256,960,256,1080,218.7C1200,181,1320,107,1380,69.3L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path>
+      </svg> -->
+    </section>
+
+    <!-- end Skills -->
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="container">
+        <div class="row text-center mb-4">
+          <div class="col-12 text-white mb-4">
+            <h2 id="headingProject"></h2>
+          </div>
+          <div class="col-12" data-aos="zoom-in" data-aos-duration="300" data-aos-once="true">
+            <button class="btn btn-light" id="btnAll">All</button>
+            <button class="btn btn-outline-light" id="btnFE">Kolam Terpal</button>
+            <button class="btn btn-outline-light" id="btnBE">Kolam Tanah</button>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-md-4 mb-3 cardFE">
+            <div class="card border-0 shadow rounded" data-aos="zoom-in" data-aos-duration="300" data-aos-once="true">
+              <img src="assets/projects/koi1.jpg" class="card-img-top" alt="project1" />
+              <div class="card-body">
+                <h5 class="card-title">Kolam Terpal #1</h5>
+                <div class="d-flex mb-1">
+                  <img src="assets/skills/molly.jpg" class="me-1" alt="bs" width="20px" height="20px" />
+                
+                </div>
+                <p class="card-text" id="card1"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3 cardFE">
+            <div class="card border-0 shadow rounded" data-aos="zoom-in" data-aos-duration="300" data-aos-once="true">
+              
+              <img src="assets/projects/koi2.jpg" class="card-img-top" alt="project2" />
+              <div class="card-body">
+                <h5 class="card-title">Ikan Koi Jumbo #2</h5>
+                <div class="d-flex mb-1">
+                  <img src="assets/skills/molly.jpg" class="me-1" alt="bs" width="20px" height="20px" />
+               
+                </div>
+                <p class="card-text" id="card8"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3 cardBE">
+            <div class="card border-0 shadow rounded" data-aos="zoom-in" data-aos-duration="300" data-aos-once="true">
+              <img src="assets/projects/koi3.jpg" class="card-img-top" alt="project3" />
+              <div class="card-body">
+                <h5 class="card-title">Kolam Tanah #3</h5>
+                <div class="d-flex mb-1">
+                  <img src="assets/skills/molly.jpg" class="me-1" alt="bs" width="20px" height="20px" />
+                </div>
+                <p class="card-text" id="card9"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3 cardBE">
+            <div class="card border-0 shadow rounded" data-aos="zoom-in" data-aos-duration="300" data-aos-once="true">
+              <div class="card-box">
+                <div class="text-center">
+                  <a href="https://www.youtube.com/watch?v=eK6W0PM3_Ko&t=1s" target="_blank" class="btn btn-danger viewYt"></a>
+
+                  <a href="https://wa.me/6283148657966?text=Hallo%20Admin%20Raksamala%20Farm" class="btn btn-dark mt-2 viewGithub" target="_blank"></a>
+                </div>
+
+
+
+          
+
+          
+          
+
+                    </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34">
+        <path fill="#fff" fill-opacity="1" d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
+      </svg>
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,192L60,202.7C120,213,240,235,360,250.7C480,267,600,277,720,256C840,235,960,181,1080,160C1200,139,1320,149,1380,154.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path>
+      </svg> -->
+    </section>
+    <!-- Akhir Projects -->
+
+    <!-- contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row text-center mb-4">
+          <div class="col">
+            <h2 id="headingContact"></h2>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mb-5">
+          <div class="col-12 text-center mb-4">
+            <a href="https://wa.me/6289529431474?text=Hallo%20Admin%20Raksamala%20Farm" target="_bank" class="btn btn-lg btn-outline-dark me-4"> <i class="bi bi-whatsapp"></i> Whatsapp</a>
+            <a href="mailto:royyellow201001@gmail.com@gmail.com" target="_blank" class="btn btn-lg btn-outline-dark"> <i class="bi bi-envelope"></i> Email</a>
+          </div>
+        </div>
+      </div>
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34">
+        <path fill="#0d6efd" fill-opacity="1" d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
+      </svg> -->
+      <div style="height: 100px; overflow: hidden">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%">
+          <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #0d6efd"></path>
+        </svg>
+      </div>
+    </section>
+    <!-- akhir contact -->
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center pb-4" id="footerText">
+      <p>Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="" class="text-white fw-bold" target="_blank" rel="noopener noreferrer">RoyFarm</a></p>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" onclick="closeContent()" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="contentMore"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/onscroll.js"></script>
+    <script src="assets/js/all.js"></script>
+    <script src="assets/js/projects.js"></script>
+    <script src="assets/js/leanguage.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/loadcontent.js"></script>
+  </body>
+</html>
